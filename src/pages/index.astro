@@ -1,0 +1,74 @@
+---
+// Layout
+import Layout from '../layouts/Layout.astro';
+
+// Components
+import Badge from '../components/Badge.astro';
+import SocialPill from '../components/SocialPill.astro';
+import Experience from '../components/Experience.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+import SectionTitle from '../components/SectionTitle.astro';
+
+
+//icons 
+import Linkedin from '../icons/Linkedin.astro';
+import Github from '../icons/Github.astro'
+import Mail from '../icons/Mail.astro';
+---
+
+<Layout 
+	title="Portafolio de Adrian Gonzalez - Desarrollador de software y Programador con +3 años de experiencia"
+	description=''
+	>
+
+	<main>
+		<SectionContainer class="pt-44">
+			
+			<h1 class="text-white text-5xl font-bold flex gap-5 flex-row">
+				Hey, <span class="text-[#3e70b6]">Soy Adrian Gonzalez</span> 
+				<a 
+					class="flex align-center ml-1"
+					href="https://www.linkedin.com/in/adrian-hgo/" 
+					target="_blank">
+					<Badge>Disponible para trabajar</Badge> 
+				</a> 
+			</h1>
+			
+			<h2 class="opacity-80">
+				+3 años de experiencia como desarrollador Web. De Cartagena, Colombia
+			</h2>
+
+			<footer class="flex gap-3 mt-7">
+				<SocialPill href="https://www.linkedin.com/in/adrian-hgo/">
+					<Linkedin/> Linkedin
+				</SocialPill>
+
+
+				<SocialPill href="https://github.com/AdrianGOT">
+					<Github/> GitHub
+				</SocialPill>
+
+				<SocialPill href="Adriamhassekgonza@gmail.com">
+					<Mail/> Email
+				</SocialPill>
+
+
+
+			</footer>
+
+		</SectionContainer >
+		
+		<SectionContainer class="pt-20" id="experience">
+			<SectionTitle icon="suitcase" title="Experiencia laboral"/>
+			<header class="flex gap-2 text-[#3e70b6]">
+			</header>
+			<Experience/>
+		</SectionContainer>
+
+	</main>
+
+</Layout>
+
+<style>
+
+</style>

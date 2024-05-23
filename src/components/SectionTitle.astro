@@ -1,0 +1,14 @@
+---
+// ICONS
+import Suitcase from '../icons/Suitcase.astro';
+import Pc from '../icons/Pc.astro';
+
+const { icon, title } = Astro.props;
+
+---
+
+<header class="flex gap-2 text-[#3e70b6]">
+    {icon === 'suitcase' && <Suitcase/>}
+    {icon === 'pc' && <Pc/>}
+    <h2 class="text-4xl font-semibold pb-4" > {title} </h2>
+</header> 
